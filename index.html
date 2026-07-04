@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+</head>
+<body>
+
+<p>A redirecionar para o questionário...</p>
+
+<script>
+const formA = "https://docs.google.com/forms/d/e/1FAIpQLSdolOZK4Py7qVtycm29K1oimhgayyAiDikKLjmGA9Bi-B2tkg/viewform";
+
+const formB = "https://docs.google.com/forms/d/e/1FAIpQLSfqMMF8Dwh8cInARPpC8LTRUZdKFrnyqcQzmjEg_gtDgSSfUA/viewform";
+
+const destino = Math.random() < 0.5 ? formA : formB;
+
+window.location.replace(destino);
+</script>
+
+</body>
+</html>
